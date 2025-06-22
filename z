@@ -57,11 +57,11 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "31.59.40.166",
-                        "port": 35330,
+                        "address": "31.59.40.213",
+                        "port": 16174,
                         "users": [
                             {
-                                "id": "562a0b9d-b558-47d8-d505-084e735b986a",
+                                "id": "33758566-426e-495b-b291-67acc5101e27",
                                 "email": "t@t.tt",
                                 "security": "auto",
                                 "encryption": "none"
