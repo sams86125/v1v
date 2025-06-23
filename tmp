@@ -1,5 +1,5 @@
 {
-	"remarks": "🆓🔆🈷0️🚯⃣🔼🔙📵",
+	"remarks": "🔆🆓🔆🔼🔆🔼🔆",
     "log": {
         "loglevel": "warning"
     },
@@ -91,7 +91,7 @@
                 "domainStrategy": "AsIs",
                 "fragment": {
                     "packets": "tlshello",
-                    "length": "100-200",
+                    "length": "10-20",
                     "interval": "10-20"
                 }
             },
