@@ -1,1 +1,129 @@
-nekoray://custom#eyJfdiI6MCwiYWRkciI6IjEyNy4wLjAuMSIsImNtZCI6WyIiXSwiY29yZSI6ImludGVybmFsIiwiY3MiOiJ7XG4gICAgXCJwYXNzd29yZFwiOiBcInFhejEyM1wiLFxuICAgIFwic2VydmVyXCI6IFwiMTUwLjI0MS43NC4yMjJcIixcbiAgICBcInNlcnZlcl9wb3J0XCI6IDIyLFxuICAgIFwidGFnXCI6IFwicHJveHlcIixcbiAgICBcInR5cGVcIjogXCJzc2hcIixcbiAgICBcInVzZXJcIjogXCJicnVicVwiXG59XG4iLCJtYXBwaW5nX3BvcnQiOjAsIm5hbWUiOiJ3ZWYzZWYzNGYzNGYzNGY0ZjNmIiwicG9ydCI6MTA4MCwic29ja3NfcG9ydCI6MH0=
+{
+    "dns": {
+        "independent_cache": true,
+        "rules": [
+            {
+                "outbound": "any",
+                "server": "dns-direct"
+            },
+            {
+                "query_type": [
+                    32,
+                    33
+                ],
+                "server": "dns-block"
+            },
+            {
+                "domain_suffix": ".lan",
+                "server": "dns-block"
+            }
+        ],
+        "servers": [
+            {
+                "address": "https://dns.google/dns-query",
+                "address_resolver": "dns-local",
+                "detour": "proxy",
+                "strategy": "",
+                "tag": "dns-remote"
+            },
+            {
+                "address": "https://doh.pub/dns-query",
+                "address_resolver": "dns-local",
+                "detour": "direct",
+                "strategy": "",
+                "tag": "dns-direct"
+            },
+            {
+                "address": "rcode://success",
+                "tag": "dns-block"
+            },
+            {
+                "address": "local",
+                "detour": "direct",
+                "tag": "dns-local"
+            }
+        ]
+    },
+    "inbounds": [
+        {
+            "domain_strategy": "",
+            "listen": "127.0.0.1",
+            "listen_port": 2080,
+            "sniff": true,
+            "sniff_override_destination": false,
+            "tag": "mixed-in",
+            "type": "mixed"
+        }
+    ],
+    "log": {
+        "level": "info"
+    },
+    "outbounds": [
+        {
+            "domain_strategy": "",
+            "password": "qaz123",
+            "server": "150.241.74.222",
+            "server_port": 22,
+            "tag": "proxy",
+            "type": "ssh",
+            "user": "brubq"
+        },
+        {
+            "tag": "direct",
+            "type": "direct"
+        },
+        {
+            "tag": "bypass",
+            "type": "direct"
+        },
+        {
+            "tag": "block",
+            "type": "block"
+        },
+        {
+            "tag": "dns-out",
+            "type": "dns"
+        }
+    ],
+    "route": {
+        "auto_detect_interface": false,
+        "final": "proxy",
+        "geoip": {
+            "path": "D:/vvv/nekoray/geoip.db"
+        },
+        "geosite": {
+            "path": "D:/vvv/nekoray/geosite.db"
+        },
+        "rules": [
+            {
+                "outbound": "dns-out",
+                "protocol": "dns"
+            },
+            {
+                "network": "udp",
+                "outbound": "block",
+                "port": [
+                    135,
+                    137,
+                    138,
+                    139,
+                    5353
+                ]
+            },
+            {
+                "ip_cidr": [
+                    "224.0.0.0/3",
+                    "ff00::/8"
+                ],
+                "outbound": "block"
+            },
+            {
+                "outbound": "block",
+                "source_ip_cidr": [
+                    "224.0.0.0/3",
+                    "ff00::/8"
+                ]
+            }
+        ]
+    }
+}
