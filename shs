@@ -63,7 +63,7 @@
             "domain_strategy": "",
             "password": "qaz123",
             "server": "150.241.74.222",
-            "server_port": 22,
+            "server_port": 5749,
             "tag": "proxy",
             "type": "ssh",
             "user": "brubq"
