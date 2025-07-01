@@ -57,7 +57,6 @@
         "Host": "google.com",
         "user-agent": "Mozilla/5.0 (Linux; Android 16) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.7151.117 Mobile Safari/537.36"
       },
-      "domainStrategy": "AsIs",
       "password": "Fi2dZZ6G8J",
       "server": "31.57.118.239",
       "server_port": 30421,
