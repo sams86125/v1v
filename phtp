@@ -62,15 +62,7 @@
       "server_port": 30421,
       "tag": "http-30421",
       "type": "http",
-      "username": "iGM5xd6M",
-      "noises": [
-          {
-          "type": "base64",
-          "packet": "7nQBAAABAAAAAAAABnQtcmluZwZtc2VkZ2UDbmV0AAABAAE=",
-          "delay": "10-16"
-          }
-      ],
-      "proxyProtocol": 0
+      "username": "iGM5xd6M"
     }
   ],
   "route": {
