@@ -26,8 +26,7 @@
       "users": []
     }
   ],
-  "outbounds": 
-  [
+  "outbounds": [
     {
       "outbounds": [
         "auto",
@@ -37,7 +36,6 @@
       "tag": "proxy",
       "type": "selector"
     },
-
     {
       "interval": "10m",
       "outbounds": [
