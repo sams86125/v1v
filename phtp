@@ -31,7 +31,7 @@
       "outbounds": [
         "auto",
         "direct",
-        "http-30421"
+        "http-46091"
       ],
       "tag": "proxy",
       "type": "selector"
@@ -39,7 +39,7 @@
     {
       "interval": "10m",
       "outbounds": [
-        "http-30421"
+        "http-46091"
       ],
       "tag": "auto",
       "tolerance": 50,
@@ -53,14 +53,14 @@
     {
       "headers": {
         "Host": "google.com",
-        "user-agent": "Mozilla/5.0 (Linux; Android 16) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.7151.117 Mobile Safari/537.36"
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/114.0.5735.99 Mobile/15E148 Safari/604.1"
       },
-      "password": "Fi2dZZ6G8J",
-      "server": "31.57.118.239",
-      "server_port": 30421,
-      "tag": "http-30421",
+      "password": "7VaryiteAk",
+      "server": "194.113.37.20",
+      "server_port": 46091,
+      "tag": "http-46091",
       "type": "http",
-      "username": "iGM5xd6M"
+      "username": "u9jgrmZ1"
     }
   ],
   "route": {
