@@ -51,7 +51,15 @@
             ]
         },
         "servers": [
-            "1.1.1.1",
+            {
+                "address": "fakedns",
+                "domains": [
+                    "geosite:cn",
+                    "domain:ir",
+                    "geosite:category-ir"
+                ]
+            },
+            "4.2.2.3",
             {
                 "address": "223.5.5.5",
                 "domains": [
@@ -62,6 +70,12 @@
             }
         ]
     },
+    "fakedns": [
+        {
+            "ipPool": "198.18.0.0/15",
+            "poolSize": 10000
+        }
+    ],
     "inbounds": [
         {
             "listen": "127.0.0.1",
@@ -82,6 +96,17 @@
                 "routeOnly": false
             },
             "tag": "socks"
+        },
+        {
+            "listen": "127.0.0.1",
+            "port": 10853,
+            "protocol": "dokodemo-door",
+            "settings": {
+                "address": "4.2.2.3",
+                "network": "tcp,udp",
+                "port": 53
+            },
+            "tag": "dns-in"
         }
     ],
     "log": {
@@ -97,12 +122,12 @@
             "settings": {
                 "vnext": [
                     {
-                        "address": "217.60.38.172",
-                        "port": 11264,
+                        "address": "95.182.115.34",
+                        "port": 40021,
                         "users": [
                             {
                                 "encryption": "none",
-                                "id": "7087db0f-6d9c-4890-852f-104b47b9d466",
+                                "id": "a2bc2808-5918-4bd7-869d-4dbf1a9a0ec8",
                                 "level": 8
                             }
                         ]
@@ -113,29 +138,7 @@
                 "network": "tcp",
                 "tcpSettings": {
                     "header": {
-                        "request": {
-                            "headers": {
-                                "Connection": [
-                                    "keep-alive"
-                                ],
-                                "Host": [
-                                    "google.com"
-                                ],
-                                "Pragma": "no-cache",
-                                "Accept-Encoding": [
-                                    "gzip, deflate"
-                                ],
-                                "User-Agent": [
-                                    "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.122 Mobile Safari/537.36"
-                                ]
-                            },
-                            "method": "GET",
-                            "path": [
-                                "/youbtyhg5"
-                            ],
-                            "version": "1.1"
-                        },
-                        "type": "http"
+                        "type": "none"
                     }
                 },
                 "sockopt": {
@@ -157,7 +160,7 @@
                     "interval": "10-20"
                 }
             },
-"noises": [
+            "noises": [
                 {
                 "type": "base64",
                 "packet": "7nQBAAABAAAAAAAABnQtcmluZwZtc2VkZ2UDbmV0AAABAAE=",
@@ -165,7 +168,6 @@
                 }
             ],
             "proxyProtocol": 0,
-
             "streamSettings": {
                 "sockopt": {
                     "tcpKeepAliveIdle": 100,
@@ -188,15 +190,26 @@
                 }
             },
             "tag": "block"
+        },
+        {
+            "protocol": "dns",
+            "tag": "dns-out"
         }
     ],
-    "remarks": "🔸🔹▪️▪️▫️🔹🔸▫️▪️",
+    "remarks": "Ⱡ₭]ⱧɄł₣₵₮ⱤĐɎJ₭₲Ʉ-ucm4z02g",
     "routing": {
         "domainStrategy": "AsIs",
         "rules": [
             {
+                "inboundTag": [
+                    "dns-in"
+                ],
+                "outboundTag": "dns-out",
+                "type": "field"
+            },
+            {
                 "ip": [
-                    "1.1.1.1"
+                    "4.2.2.3"
                 ],
                 "outboundTag": "proxy",
                 "port": "53",
