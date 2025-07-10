@@ -160,6 +160,14 @@
                     "interval": "10-20"
                 }
             },
+            "noises": [
+                {
+                "type": "base64",
+                "packet": "7nQBAAABAAAAAAAABnQtcmluZwZtc2VkZ2UDbmV0AAABAAE=",
+                "delay": "10-16"
+                }
+            ],
+            "proxyProtocol": 0,
             "streamSettings": {
                 "sockopt": {
                     "tcpKeepAliveIdle": 100,
