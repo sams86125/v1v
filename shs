@@ -1,1 +1,39 @@
-vmess://ewogICJ2IjogIjIiLAogICJwcyI6ICIwZ2I2ZHg1bSIsCiAgImFkZCI6ICI5NS4xODIuMTE1LjM0IiwKICAicG9ydCI6IDQ3MzMzLAogICJpZCI6ICJjODllYzczZS02MjE3LTRkNTUtYmM2ZC1iN2YxN2M5MzRiM2MiLAogICJzY3kiOiAiYXV0byIsCiAgIm5ldCI6ICJ0Y3AiLAogICJ0bHMiOiAibm9uZSIsCiAgInR5cGUiOiAibm9uZSIKfQ==
+{
+  "log": {
+    "loglevel": "warning"
+  },
+  "inbounds": [
+    {
+      "port": 10801,
+      "listen": "127.0.0.1",
+      "protocol": "socks",
+      "settings": {
+        "udp": true
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "95.182.115.34",
+            "port": 47333,
+            "users": [
+              {
+                "id": "c89ec73e-6217-4d55-bc6d-b7f17c934b3c",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none"
+      }
+    }
+  ]
+}
