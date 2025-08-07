@@ -59,9 +59,9 @@
                     "geosite:category-ir"
                 ]
             },
-            "4.2.2.3",
+            "https://8.8.8.8/dns-query",
             {
-                "address": "223.5.5.5",
+                "address": "1.1.1.2",
                 "domains": [
                     "domain:ir",
                     "geosite:category-ir"
@@ -102,7 +102,7 @@
             "port": 10853,
             "protocol": "dokodemo-door",
             "settings": {
-                "address": "4.2.2.3",
+                "address": "1.1.1.1",
                 "network": "tcp,udp",
                 "port": 53
             },
@@ -118,17 +118,17 @@
                 "concurrency": -1,
                 "enabled": false
             },
-            "protocol": "vless",
+            "protocol": "vmess",
             "settings": {
                 "vnext": [
                     {
-                        "address": "95.182.115.34",
-                        "port": 40021,
+                        "address": "31.57.108.22",
+                        "port": 54779,
                         "users": [
                             {
-                                "encryption": "none",
-                                "id": "f452ec4b-3a35-4b8a-83e2-019b082b0904",
-                                "level": 8
+                                "id": "2d5a402c-e18c-456f-94c7-0577e45123f2",
+                                "level": 8,
+                                "security": "auto"
                             }
                         ]
                     }
@@ -136,6 +136,7 @@
             },
             "streamSettings": {
                 "network": "tcp",
+                "security": "none",
                 "tcpSettings": {
                     "header": {
                         "type": "none"
@@ -160,14 +161,6 @@
                     "interval": "10-20"
                 }
             },
-            "noises": [
-                {
-                "type": "base64",
-                "packet": "7nQBAAABAAAAAAAABnQtcmluZwZtc2VkZ2UDbmV0AAABAAE=",
-                "delay": "10-16"
-                }
-            ],
-            "proxyProtocol": 0,
             "streamSettings": {
                 "sockopt": {
                     "tcpKeepAliveIdle": 100,
@@ -196,7 +189,7 @@
             "tag": "dns-out"
         }
     ],
-    "remarks": "Ⱡ₭🔸]Ⱨ▫️Ʉł₣🔸₵₮Ɽ▪️ĐɎJ🔹₭₲Ʉ",
+    "remarks": "🟦🔲🟨◻️◼️🔲🟥🔳",
     "routing": {
         "domainStrategy": "AsIs",
         "rules": [
@@ -209,15 +202,7 @@
             },
             {
                 "ip": [
-                    "4.2.2.3"
-                ],
-                "outboundTag": "proxy",
-                "port": "53",
-                "type": "field"
-            },
-            {
-                "ip": [
-                    "223.5.5.5"
+                    "1.1.1.2"
                 ],
                 "outboundTag": "direct",
                 "port": "53",
