@@ -1,0 +1,905 @@
+{
+  "log": {
+    "disabled": false,
+    "level": "warn",
+    "timestamp": true
+  },
+  "dns": {
+    "servers": [
+      {
+        "type": "https",
+        "server": "8.8.8.8",
+        "detour": "🐼🐼🐼🐼🐼🐼",
+        "tag": "🧪🧪🧪🧪🧪🧪"
+      },
+      {
+        "type": "udp",
+        "server": "8.8.8.8",
+        "tag": "⚙⚙⚙⚙⚙⚙"
+      }
+    ],
+    "rules": [
+      {
+        "clash_mode": "Direct",
+        "server": "⚙⚙⚙⚙⚙⚙"
+      },
+      {
+        "clash_mode": "Global",
+        "server": "🧪🧪🧪🧪🧪🧪"
+      }
+    ],
+    "strategy": "ipv4_only",
+    "independent_cache": true
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+      "tag": "🐘🐘🐘🐘🐘🐘",
+      "address": [
+        "172.19.0.1/28"
+      ],
+      "mtu": 9000,
+      "auto_route": true,
+      "strict_route": true,
+      "stack": "mixed"
+    },
+    {
+      "type": "mixed",
+      "tag": "🦋🦋🦋🦋🦋🦋",
+      "listen": "127.0.0.1",
+      "listen_port": 2080
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "🦝🦝🦝🦝🦝🦝",
+      "type": "vless",
+      "server": "xwe-iq-l4nxa0coay925m3bovshvll41.noorart1.workers.dev",
+      "server_port": 2086,
+      "tcp_fast_open": false,
+      "uuid": "f9d51013-c21b-42c2-ab13-21cabaa27c80",
+      "packet_encoding": "",
+      "network": "tcp",
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiY0o1blp0SXQ3bTFLQiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "headers": {
+          "Host": "xwe-iq-l4nxa0coay925m3bovshvll41.noorart1.workers.dev"
+        }
+      }
+    },
+    {
+      "tag": "🔭🔭🔭🔭🔭🔭",
+      "type": "vless",
+      "server": "www.speedtest.net",
+      "server_port": 2086,
+      "tcp_fast_open": false,
+      "uuid": "f9d51013-c21b-42c2-ab13-21cabaa27c80",
+      "packet_encoding": "",
+      "network": "tcp",
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiN0RXNm9XVzF2RUowRzhRWiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "headers": {
+          "Host": "xwe-iq-l4nxa0coay925m3bovshvll41.noorart1.workers.dev"
+        }
+      }
+    },
+    {
+      "tag": "🦦🦦🦦🦦🦦🦦",
+      "type": "vless",
+      "server": "172.67.143.23",
+      "server_port": 2086,
+      "tcp_fast_open": false,
+      "uuid": "f9d51013-c21b-42c2-ab13-21cabaa27c80",
+      "packet_encoding": "",
+      "network": "tcp",
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoickE1QVVXS2d6Q2o1QmhhIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==",
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "headers": {
+          "Host": "xwe-iq-l4nxa0coay925m3bovshvll41.noorart1.workers.dev"
+        }
+      }
+    },
+    {
+      "tag": "📡📡📡📡📡📡",
+      "type": "vless",
+      "server": "104.21.71.41",
+      "server_port": 2086,
+      "tcp_fast_open": false,
+      "uuid": "f9d51013-c21b-42c2-ab13-21cabaa27c80",
+      "packet_encoding": "",
+      "network": "tcp",
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiT25FZUtkcXN2M0giLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119",
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "headers": {
+          "Host": "xwe-iq-l4nxa0coay925m3bovshvll41.noorart1.workers.dev"
+        }
+      }
+    },
+    {
+      "tag": "🐉🐉🐉🐉🐉🐉",
+      "type": "vless",
+      "server": "172.67.245.124",
+      "server_port": 2086,
+      "tcp_fast_open": false,
+      "uuid": "f9d51013-c21b-42c2-ab13-21cabaa27c80",
+      "packet_encoding": "",
+      "network": "tcp",
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoidmN3ZHJla1kiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119",
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "headers": {
+          "Host": "xwe-iq-l4nxa0coay925m3bovshvll41.noorart1.workers.dev"
+        }
+      }
+    },
+    {
+      "tag": "🍄🍄🍄🍄🍄🍄",
+      "type": "vless",
+      "server": "104.20.12.190",
+      "server_port": 2086,
+      "tcp_fast_open": false,
+      "uuid": "f9d51013-c21b-42c2-ab13-21cabaa27c80",
+      "packet_encoding": "",
+      "network": "tcp",
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiVXdYbGlBNFoxMUloazYiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119",
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "headers": {
+          "Host": "xwe-iq-l4nxa0coay925m3bovshvll41.noorart1.workers.dev"
+        }
+      }
+    },
+    {
+      "tag": "☆☆☆☆☆☆",
+      "type": "vless",
+      "server": "104.17.247.134",
+      "server_port": 2086,
+      "tcp_fast_open": false,
+      "uuid": "f9d51013-c21b-42c2-ab13-21cabaa27c80",
+      "packet_encoding": "",
+      "network": "tcp",
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiTUlvajM3aGdwR1hUZCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "headers": {
+          "Host": "xwe-iq-l4nxa0coay925m3bovshvll41.noorart1.workers.dev"
+        }
+      }
+    },
+    {
+      "tag": "🔍🔍🔍🔍🔍🔍",
+      "type": "vless",
+      "server": "172.67.237.198",
+      "server_port": 2086,
+      "tcp_fast_open": false,
+      "uuid": "f9d51013-c21b-42c2-ab13-21cabaa27c80",
+      "packet_encoding": "",
+      "network": "tcp",
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiSnhxcUhBS3REc3FMaDUiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119",
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "headers": {
+          "Host": "xwe-iq-l4nxa0coay925m3bovshvll41.noorart1.workers.dev"
+        }
+      }
+    },
+    {
+      "tag": "💧💧💧💧💧💧",
+      "type": "vless",
+      "server": "104.18.39.113",
+      "server_port": 2086,
+      "tcp_fast_open": false,
+      "uuid": "f9d51013-c21b-42c2-ab13-21cabaa27c80",
+      "packet_encoding": "",
+      "network": "tcp",
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiTmxGMmRkSmJyIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==",
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "headers": {
+          "Host": "xwe-iq-l4nxa0coay925m3bovshvll41.noorart1.workers.dev"
+        }
+      }
+    },
+    {
+      "tag": "🟨🟨🟨🟨🟨🟨",
+      "type": "vless",
+      "server": "104.17.174.153",
+      "server_port": 2086,
+      "tcp_fast_open": false,
+      "uuid": "f9d51013-c21b-42c2-ab13-21cabaa27c80",
+      "packet_encoding": "",
+      "network": "tcp",
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiTEd5SHJJWXdGWUQiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119",
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "headers": {
+          "Host": "xwe-iq-l4nxa0coay925m3bovshvll41.noorart1.workers.dev"
+        }
+      }
+    },
+    {
+      "tag": "🔷🔷🔷🔷🔷🔷",
+      "type": "vless",
+      "server": "104.19.97.239",
+      "server_port": 2086,
+      "tcp_fast_open": false,
+      "uuid": "f9d51013-c21b-42c2-ab13-21cabaa27c80",
+      "packet_encoding": "",
+      "network": "tcp",
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiQ2gyOHJRVHhYTWNUIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==",
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "headers": {
+          "Host": "xwe-iq-l4nxa0coay925m3bovshvll41.noorart1.workers.dev"
+        }
+      }
+    },
+    {
+      "tag": "🛰🛰🛰🛰🛰🛰",
+      "type": "vless",
+      "server": "172.67.108.67",
+      "server_port": 2086,
+      "tcp_fast_open": false,
+      "uuid": "f9d51013-c21b-42c2-ab13-21cabaa27c80",
+      "packet_encoding": "",
+      "network": "tcp",
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiNk9IUk4yTVVEUGpraU8iLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119",
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "headers": {
+          "Host": "xwe-iq-l4nxa0coay925m3bovshvll41.noorart1.workers.dev"
+        }
+      }
+    },
+    {
+      "tag": "🎤🎤🎤🎤🎤🎤",
+      "type": "vless",
+      "server": "162.159.56.26",
+      "server_port": 2086,
+      "tcp_fast_open": false,
+      "uuid": "f9d51013-c21b-42c2-ab13-21cabaa27c80",
+      "packet_encoding": "",
+      "network": "tcp",
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiWkozcFNVbzRuTDR1Y1UiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119",
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "headers": {
+          "Host": "xwe-iq-l4nxa0coay925m3bovshvll41.noorart1.workers.dev"
+        }
+      }
+    },
+    {
+      "tag": "🌋🌋🌋🌋🌋🌋",
+      "type": "vless",
+      "server": "172.65.136.208",
+      "server_port": 2086,
+      "tcp_fast_open": false,
+      "uuid": "f9d51013-c21b-42c2-ab13-21cabaa27c80",
+      "packet_encoding": "",
+      "network": "tcp",
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoieDEwdHo5Nkl2UkNaZGp4aCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "headers": {
+          "Host": "xwe-iq-l4nxa0coay925m3bovshvll41.noorart1.workers.dev"
+        }
+      }
+    },
+    {
+      "tag": "🌸🌸🌸🌸🌸🌸",
+      "type": "vless",
+      "server": "xwe-iq-l4nxa0coay925m3bovshvll41.noorart1.workers.dev",
+      "server_port": 2083,
+      "tcp_fast_open": false,
+      "uuid": "f9d51013-c21b-42c2-ab13-21cabaa27c80",
+      "packet_encoding": "",
+      "network": "tcp",
+      "tls": {
+        "enabled": true,
+        "server_name": "xwe-iQ-l4nXA0cOay925m3BOvSHVLl41.NoorART1.workeRS.dEV",
+        "record_fragment": false,
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoib1hoOVRrWjRIa2oiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119",
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "headers": {
+          "Host": "xwe-iq-l4nxa0coay925m3bovshvll41.noorart1.workers.dev"
+        }
+      }
+    },
+    {
+      "tag": "🌩🌩🌩🌩🌩🌩",
+      "type": "vless",
+      "server": "www.speedtest.net",
+      "server_port": 2083,
+      "tcp_fast_open": false,
+      "uuid": "f9d51013-c21b-42c2-ab13-21cabaa27c80",
+      "packet_encoding": "",
+      "network": "tcp",
+      "tls": {
+        "enabled": true,
+        "server_name": "XwE-iq-l4NXa0cOAy925M3BOVSHVLl41.nooRART1.workErs.Dev",
+        "record_fragment": false,
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiZXJvSU9IUGQiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119",
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "headers": {
+          "Host": "xwe-iq-l4nxa0coay925m3bovshvll41.noorart1.workers.dev"
+        }
+      }
+    },
+    {
+      "tag": "🌾🌾🌾🌾🌾🌾",
+      "type": "vless",
+      "server": "172.67.143.23",
+      "server_port": 2083,
+      "tcp_fast_open": false,
+      "uuid": "f9d51013-c21b-42c2-ab13-21cabaa27c80",
+      "packet_encoding": "",
+      "network": "tcp",
+      "tls": {
+        "enabled": true,
+        "server_name": "XWE-IQ-L4NXA0cOAy925M3bOVshVLl41.NOOrARt1.worKeRS.dev",
+        "record_fragment": false,
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoidXFLUlRQOGZSWXkiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119",
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "headers": {
+          "Host": "xwe-iq-l4nxa0coay925m3bovshvll41.noorart1.workers.dev"
+        }
+      }
+    },
+    {
+      "tag": "🧠🧠🧠🧠🧠🧠",
+      "type": "vless",
+      "server": "104.21.71.41",
+      "server_port": 2083,
+      "tcp_fast_open": false,
+      "uuid": "f9d51013-c21b-42c2-ab13-21cabaa27c80",
+      "packet_encoding": "",
+      "network": "tcp",
+      "tls": {
+        "enabled": true,
+        "server_name": "XWe-iQ-L4NXa0Coay925m3BovSHVLL41.NooRArt1.WorKeRS.DEV",
+        "record_fragment": false,
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiSTM4bWFjS1QwViIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "headers": {
+          "Host": "xwe-iq-l4nxa0coay925m3bovshvll41.noorart1.workers.dev"
+        }
+      }
+    },
+    {
+      "tag": "🧱🧱🧱🧱🧱🧱",
+      "type": "vless",
+      "server": "172.67.245.124",
+      "server_port": 2083,
+      "tcp_fast_open": false,
+      "uuid": "f9d51013-c21b-42c2-ab13-21cabaa27c80",
+      "packet_encoding": "",
+      "network": "tcp",
+      "tls": {
+        "enabled": true,
+        "server_name": "Xwe-IQ-l4NXa0coAY925m3BOvshvLl41.NooRarT1.WorkERS.dev",
+        "record_fragment": false,
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoieU1haUFjdFB6OCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "headers": {
+          "Host": "xwe-iq-l4nxa0coay925m3bovshvll41.noorart1.workers.dev"
+        }
+      }
+    },
+    {
+      "tag": "⌚⌚⌚⌚⌚⌚",
+      "type": "vless",
+      "server": "104.20.12.190",
+      "server_port": 2083,
+      "tcp_fast_open": false,
+      "uuid": "f9d51013-c21b-42c2-ab13-21cabaa27c80",
+      "packet_encoding": "",
+      "network": "tcp",
+      "tls": {
+        "enabled": true,
+        "server_name": "Xwe-iq-L4nXA0CoAY925M3bOVsHVLL41.NoORaRt1.wORkErS.DeV",
+        "record_fragment": false,
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiQ2VvYXFReERwIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==",
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "headers": {
+          "Host": "xwe-iq-l4nxa0coay925m3bovshvll41.noorart1.workers.dev"
+        }
+      }
+    },
+    {
+      "tag": "🕹🕹🕹🕹🕹🕹",
+      "type": "vless",
+      "server": "104.17.247.134",
+      "server_port": 2083,
+      "tcp_fast_open": false,
+      "uuid": "f9d51013-c21b-42c2-ab13-21cabaa27c80",
+      "packet_encoding": "",
+      "network": "tcp",
+      "tls": {
+        "enabled": true,
+        "server_name": "Xwe-iQ-l4nxA0cOAy925m3BovsHVLl41.noORART1.WoRKERs.DEV",
+        "record_fragment": false,
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoibHhpN244Y3NKIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==",
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "headers": {
+          "Host": "xwe-iq-l4nxa0coay925m3bovshvll41.noorart1.workers.dev"
+        }
+      }
+    },
+    {
+      "tag": "🍃🍃🍃🍃🍃🍃",
+      "type": "vless",
+      "server": "172.67.237.198",
+      "server_port": 2083,
+      "tcp_fast_open": false,
+      "uuid": "f9d51013-c21b-42c2-ab13-21cabaa27c80",
+      "packet_encoding": "",
+      "network": "tcp",
+      "tls": {
+        "enabled": true,
+        "server_name": "xwe-Iq-L4NxA0Coay925m3bOVshvlL41.nOoraRt1.woRKERS.DEv",
+        "record_fragment": false,
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoicnYwZzZ2b0oiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119",
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "headers": {
+          "Host": "xwe-iq-l4nxa0coay925m3bovshvll41.noorart1.workers.dev"
+        }
+      }
+    },
+    {
+      "tag": "🌿🌿🌿🌿🌿🌿",
+      "type": "vless",
+      "server": "104.18.39.113",
+      "server_port": 2083,
+      "tcp_fast_open": false,
+      "uuid": "f9d51013-c21b-42c2-ab13-21cabaa27c80",
+      "packet_encoding": "",
+      "network": "tcp",
+      "tls": {
+        "enabled": true,
+        "server_name": "Xwe-IQ-L4NXa0CoaY925m3BOVsHVlL41.NooRArT1.WorkErS.dEv",
+        "record_fragment": false,
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiUWpsMzN0OEs5TXpFeCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "headers": {
+          "Host": "xwe-iq-l4nxa0coay925m3bovshvll41.noorart1.workers.dev"
+        }
+      }
+    },
+    {
+      "tag": "🖨🖨🖨🖨🖨🖨",
+      "type": "vless",
+      "server": "104.17.174.153",
+      "server_port": 2083,
+      "tcp_fast_open": false,
+      "uuid": "f9d51013-c21b-42c2-ab13-21cabaa27c80",
+      "packet_encoding": "",
+      "network": "tcp",
+      "tls": {
+        "enabled": true,
+        "server_name": "Xwe-IQ-l4nXA0CoaY925m3BovshVll41.nooRart1.WoRKeRs.dev",
+        "record_fragment": false,
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiWkJPb1lZTDE0SiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "headers": {
+          "Host": "xwe-iq-l4nxa0coay925m3bovshvll41.noorart1.workers.dev"
+        }
+      }
+    },
+    {
+      "tag": "🔺🔺🔺🔺🔺🔺",
+      "type": "vless",
+      "server": "104.19.97.239",
+      "server_port": 2083,
+      "tcp_fast_open": false,
+      "uuid": "f9d51013-c21b-42c2-ab13-21cabaa27c80",
+      "packet_encoding": "",
+      "network": "tcp",
+      "tls": {
+        "enabled": true,
+        "server_name": "XWe-iq-L4Nxa0cOAY925M3boVSHvLl41.noOrArt1.workeRS.DeV",
+        "record_fragment": false,
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiOVFyRVRMVVQiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119",
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "headers": {
+          "Host": "xwe-iq-l4nxa0coay925m3bovshvll41.noorart1.workers.dev"
+        }
+      }
+    },
+    {
+      "tag": "🧸🧸🧸🧸🧸🧸",
+      "type": "vless",
+      "server": "172.67.108.67",
+      "server_port": 2083,
+      "tcp_fast_open": false,
+      "uuid": "f9d51013-c21b-42c2-ab13-21cabaa27c80",
+      "packet_encoding": "",
+      "network": "tcp",
+      "tls": {
+        "enabled": true,
+        "server_name": "xwE-iq-l4nXA0coay925m3BOvSHvlL41.nOOrarT1.WOrkerS.dEV",
+        "record_fragment": false,
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiUWlXeVJRSVp5Rkd3UzAiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119",
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "headers": {
+          "Host": "xwe-iq-l4nxa0coay925m3bovshvll41.noorart1.workers.dev"
+        }
+      }
+    },
+    {
+      "tag": "🍒🍒🍒🍒🍒🍒",
+      "type": "vless",
+      "server": "162.159.56.26",
+      "server_port": 2083,
+      "tcp_fast_open": false,
+      "uuid": "f9d51013-c21b-42c2-ab13-21cabaa27c80",
+      "packet_encoding": "",
+      "network": "tcp",
+      "tls": {
+        "enabled": true,
+        "server_name": "XWE-iQ-L4nxa0COaY925m3bovsHVLl41.nOorarT1.WORkErS.DEv",
+        "record_fragment": false,
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiQ1JFZUhuQVRIRCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "headers": {
+          "Host": "xwe-iq-l4nxa0coay925m3bovshvll41.noorart1.workers.dev"
+        }
+      }
+    },
+    {
+      "tag": "🐓🐓🐓🐓🐓🐓",
+      "type": "vless",
+      "server": "172.65.136.208",
+      "server_port": 2083,
+      "tcp_fast_open": false,
+      "uuid": "f9d51013-c21b-42c2-ab13-21cabaa27c80",
+      "packet_encoding": "",
+      "network": "tcp",
+      "tls": {
+        "enabled": true,
+        "server_name": "XWE-IQ-l4NxA0Coay925m3BOvsHVLl41.noORArT1.wORKERs.DEv",
+        "record_fragment": false,
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiYkFUdWdmRlU4QVBLNSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "headers": {
+          "Host": "xwe-iq-l4nxa0coay925m3bovshvll41.noorart1.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "🐼🐼🐼🐼🐼🐼",
+      "outbounds": [
+        "💫💫💫💫💫💫",
+        "🦝🦝🦝🦝🦝🦝",
+        "🔭🔭🔭🔭🔭🔭",
+        "🦦🦦🦦🦦🦦🦦",
+        "📡📡📡📡📡📡",
+        "🐉🐉🐉🐉🐉🐉",
+        "🍄🍄🍄🍄🍄🍄",
+        "☆☆☆☆☆☆",
+        "🔍🔍🔍🔍🔍🔍",
+        "💧💧💧💧💧💧",
+        "🟨🟨🟨🟨🟨🟨",
+        "🔷🔷🔷🔷🔷🔷",
+        "🛰🛰🛰🛰🛰🛰",
+        "🎤🎤🎤🎤🎤🎤",
+        "🌋🌋🌋🌋🌋🌋",
+        "🌸🌸🌸🌸🌸🌸",
+        "🌩🌩🌩🌩🌩🌩",
+        "🌾🌾🌾🌾🌾🌾",
+        "🧠🧠🧠🧠🧠🧠",
+        "🧱🧱🧱🧱🧱🧱",
+        "⌚⌚⌚⌚⌚⌚",
+        "🕹🕹🕹🕹🕹🕹",
+        "🍃🍃🍃🍃🍃🍃",
+        "🌿🌿🌿🌿🌿🌿",
+        "🖨🖨🖨🖨🖨🖨",
+        "🔺🔺🔺🔺🔺🔺",
+        "🧸🧸🧸🧸🧸🧸",
+        "🍒🍒🍒🍒🍒🍒",
+        "🐓🐓🐓🐓🐓🐓"
+      ],
+      "interrupt_exist_connections": false
+    },
+    {
+      "type": "🧬🧬🧬🧬🧬🧬",
+      "tag": "🧬🧬🧬🧬🧬🧬"
+    },
+    {
+      "type": "urltest",
+      "tag": "💫💫💫💫💫💫",
+      "outbounds": [
+        "🦝🦝🦝🦝🦝🦝",
+        "🔭🔭🔭🔭🔭🔭",
+        "🦦🦦🦦🦦🦦🦦",
+        "📡📡📡📡📡📡",
+        "🐉🐉🐉🐉🐉🐉",
+        "🍄🍄🍄🍄🍄🍄",
+        "☆☆☆☆☆☆",
+        "🔍🔍🔍🔍🔍🔍",
+        "💧💧💧💧💧💧",
+        "🟨🟨🟨🟨🟨🟨",
+        "🔷🔷🔷🔷🔷🔷",
+        "🛰🛰🛰🛰🛰🛰",
+        "🎤🎤🎤🎤🎤🎤",
+        "🌋🌋🌋🌋🌋🌋",
+        "🌸🌸🌸🌸🌸🌸",
+        "🌩🌩🌩🌩🌩🌩",
+        "🌾🌾🌾🌾🌾🌾",
+        "🧠🧠🧠🧠🧠🧠",
+        "🧱🧱🧱🧱🧱🧱",
+        "⌚⌚⌚⌚⌚⌚",
+        "🕹🕹🕹🕹🕹🕹",
+        "🍃🍃🍃🍃🍃🍃",
+        "🌿🌿🌿🌿🌿🌿",
+        "🖨🖨🖨🖨🖨🖨",
+        "🔺🔺🔺🔺🔺🔺",
+        "🧸🧸🧸🧸🧸🧸",
+        "🍒🍒🍒🍒🍒🍒",
+        "🐓🐓🐓🐓🐓🐓"
+      ],
+      "url": "https://www.gstatic.com/generate_204",
+      "interrupt_exist_connections": false,
+      "interval": "30s"
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "ip_cidr": "172.19.0.2",
+        "action": "hijack-dns"
+      },
+      {
+        "clash_mode": "Direct",
+        "outbound": "🧬🧬🧬🧬🧬🧬"
+      },
+      {
+        "clash_mode": "Global",
+        "outbound": "🐼🐼🐼🐼🐼🐼"
+      },
+      {
+        "action": "sniff"
+      },
+      {
+        "protocol": "dns",
+        "action": "hijack-dns"
+      },
+      {
+        "ip_is_private": true,
+        "outbound": "🧬🧬🧬🧬🧬🧬"
+      },
+      {
+        "network": "udp",
+        "action": "reject"
+      }
+    ],
+    "auto_detect_interface": true,
+    "default_domain_resolver": {
+      "server": "⚙⚙⚙⚙⚙⚙",
+      "strategy": "ipv4_only",
+      "rewrite_ttl": 60
+    },
+    "final": "🐼🐼🐼🐼🐼🐼"
+  },
+  "ntp": {
+    "enabled": true,
+    "server": "time.cloudflare.com",
+    "server_port": 123,
+    "domain_resolver": "⚙⚙⚙⚙⚙⚙",
+    "interval": "30m",
+    "write_to_system": false
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true,
+      "store_fakeip": true
+    },
+    "clash_api": {
+      "external_controller": "127.0.0.1:9090",
+      "external_ui": "ui",
+      "default_mode": "Rule",
+      "external_ui_download_url": "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",
+      "external_ui_download_detour": "🧬🧬🧬🧬🧬🧬"
+    }
+  }
+}
